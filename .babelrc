@@ -1,0 +1,9 @@
+{
+  "presets" : [
+    ["@babel/preset-env", {
+      "targets": { "browsers": ["last 2 versions", "ie >= 11"] },
+      "include": ["es6.object.assign","es6.promise", "es6.object.keys"]
+    }],
+    "@babel/preset-react"
+  ]
+}

@@ -1,0 +1,28 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+    - "8.9"
+
+cache:
+    yarn: true
+    directories:
+      - node_modules
+
+script:
+    - true
+
+deploy:
+  - provider: script
+    script: npm publish
+    on:
+      branch: master
+
+notifications:
+    slack:
+      rooms:
+        - crowdriff:oENsJbaIXpHc0IfYF0XB8eSq
+      on_success: always
+      on_failure: always
+      on_start: true

@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/crowdriff/react-crowdriff-gallery#readme",
   "peerDependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react": "^15",
+    "react-dom": "^15"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
